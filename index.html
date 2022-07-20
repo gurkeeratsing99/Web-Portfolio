@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <!-- BootStrap link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <!-- aos link -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Own CSS -->
+<link rel="stylesheet" href="objects/style.css">
+    <meta charset="utf-8">
+    <title>Garry's Website</title>
+  </head>
+  <body  data-bs-spy="scroll" data-bs-target=".navbar">
+
+  <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top">
+              <div class="container flex-lg-column">
+                <a class="navbar-brand mb-lg-4 mx-lg-auto" href="#">
+                  <span class="h3 fw-bold d-block d-lg-none">Garry Singh</span>
+                  <img src="objects/images/profile.png" class="d-none d-lg-block" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#contact">Contact me</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+  </nav>
+
+  <div id="content-wrapper">
+    <section id="home" class="full-height">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="display-4 fw-bold">My name is Garry.</h2>
+            <p class="lead mt-2 mb-4">I love programing and I want to change the world one day</p>
+
+          </div>
+
+
+        </div>
+        <div class="row justify-content-left">
+
+          <div class="col-md-auto col-sm-auto p-2">
+          <a href="https://www.linkedin.com/in/gurkeerat-singh" class="btn btn-brand me-3"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+          </div>
+          <div class="col-md-auto col-sm-auto p-2">
+          <a href="mailto:gurkeeratsingh99@gmail.com" class="btn btn-brand me-3"><i class="fa-solid fa-envelope"></i> Email</a>
+          </div>
+          <div class="col-md-auto col-sm-auto p-2">
+          <a href="#" class="link-custom"><i class="fa-solid fa-phone"></i> 778-242-2163</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="projects" class="full-height px-lg-5">
+      <div class="container">
+
+        <div class="row pb-4" >
+          <div class="col-lg-8">
+            <h1 >Web Projects I have made so far</h1>
+          </div>
+
+        </div>
+        <div class="row" >
+          <div class="col-md-3 col-sm-12 mob p-1 " >
+            <div class="projects p-4 bg-base rounded-4 shadow-effect h-100" data-aos="flip-left">
+              <h4 class="mt-2 mb-4 top">Calculator</h4>
+              <p>Made in HTML, CSS, JavaScript (jQuery). Static hosting on AWS</p>
+              <a href="https://garrywebserver.s3.ca-central-1.amazonaws.com/Calculator+Finnal+-AWS/Claculator-master/index.html" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-md-3 col-sm-12 mob p-1">
+            <div class="projects h-100 p-4 bg-base rounded-4 shadow-effect" data-aos="flip-up">
+              <h4 class="mt-2 mb-4 top">Weather</h4>
+              <p>Enter your City name and you will get the weather of that City. Made using HTML, CSS, NodeJs , Express and using OpenWeatherMap API</p>
+
+              <a href="#" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-md-3 col-sm-12 mob p-1">
+            <div class="projects h-100 p-4 bg-base rounded-4 shadow-effect" data-aos="flip-left">
+              <h4 class="mt-2 mb-4 top">Daily Journal</h4>
+              <p>I can write my Journal. Made using HTML, CSS, JavaScript ,NodeJs, Express and MonogoDB</p>
+              <a href="#" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-sm-12 mob p-1">
+            <div class="projects h-100 p-4 bg-base rounded-4 shadow-effect" data-aos="flip-left">
+              <h4 class="mt-2 mb-4 top">NewsLetter</h4>
+              <p>Users can sigup to my newletter and then I send them weekly emails with my newsletter.Build using HTML, CSS, NodeJs , Express and mailchimp API .All the user details are recored in database of Mailchimp.Being a dynamic webpage,hosting it at Heroku Server</p>
+              <a href="https://stunning-death-valley-26160.herokuapp.com/" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="full-height px-lg-5">
+          <div class="container mt-4">
+            <div class="row pb-4 " >
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1>About Me</h1>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <p>I am working full-time as System Technologist at Kwantlen Polytechnic University and a part-time restraurant manager at Hula </p>
+              </div>
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-3 mw-100">
+                <div class="card rounded-4 bg-base shadow-effect h-100 ">
+                  <div class="top col-lg-12 m-2 ms-3">
+                    My Education:
+                  </div>
+                  <div class="bottom col-lg-12 ps-3">
+                    <p>I did Diploma in Computer Information Systems from KPU</p>
+                    <p>And, I am enrolled in Bachelor of Technology at KPU</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card rounded-4 bg-base shadow-effect h-100 ">
+                  <div class="top col-lg-12 m-2 ms-3">
+                    Technologies so far I have used:
+                  </div>
+                  <div class="bottom col-lg-12 ps-3">
+                    <p>HTML,CSS</p>
+                    <p>JavaScript, jQuery</p>
+                    <p>NodeJs , Express</p>
+                    <p>MySql, MongoDB, Mongoose</p>
+                    <p>C, C++ , Java</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card rounded-4 bg-base shadow-effect h-100 ">
+                  <div class="top col-lg-12 m-2 ms-3">
+                    My Interests:
+                  </div>
+                  <div class="bottom col-lg-12 ps-3">
+                    <p>New technologies</p>
+                    <p>Buisness ideas</p>
+                    <p>Artifical Intelligence</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card rounded-4 bg-base shadow-effect h-100 ">
+                  <div class="top col-lg-12 m-2 ms-3">
+                    Future:
+                  </div>
+                  <div class="bottom col-lg-12 ps-3">
+                    <p>I want to master Web Devlopment especially the back-end and I want to contribute in the future technology.</p>
+
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </section>
+
+    <section id="resume" class="full-height px-lg-5">
+      <div class="container mt-4">
+        <div class="row pb-4" >
+          <div class="col-lg-6 col-md-12 col-sm-12 imgsm">
+            <img src="objects/images/resume1.png" alt="Resume">
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 imgsm">
+            <img src="objects/images/resume2.png" alt="Resume">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <a href="objects/GS_Resume.pdf" download='GarrySingh' class="btn btn-brand me-3"><i class="fa-solid fa-file-pdf"></i> Download pdf</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="full-height px-lg-5">
+      <div class="container">
+        <div class="row justify-content-center text-center pb-4" data-aos="fade-up" >
+          <div class="col-lg-8 pb-4">
+            <h1>Contact Me</h1>
+          </div>
+
+          <div class="col-lg-8">
+            <form class="row g-lg-3 gy-3" method="post">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="name" value="" placeholder="Enter your Name">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" value="" placeholder="Enter your email address">
+              </div>
+                <div class="form-group col-lg-9 txtBox">
+                  <textarea name="reply" rows="5" cols="40" placeholder="Questions || Suggestions || Ideas"></textarea>
+                </div>
+                <div class="form-group col-lg-3 btnRight">
+                  <button type="submit" class="btn btn-brand me-3" name="button">Send</button>
+                </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+ <!-- Own JS -->
+    <script src="index.js"></script>
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/d11c3e11f1.js"  crossorigin="anonymous"></script>
+    <!-- bootstrap js link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- aos link -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  </body>
+</html>

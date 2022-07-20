@@ -1,0 +1,215 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@600&family=Roboto:wght@300&display=swap');
+
+
+:root {
+    --color-body: #EDEDED;
+    --color-heading: #eef3db;
+    --color-base: #444444;
+    --color-base2: #171717;
+    --color-brand: #C06014;
+    --color-brand2: #F2A154;
+    --sidbar-width: 240px;
+    --font-base: "Roboto Mono";
+    --color-buttonHover:#EF5B0C;
+
+}
+body{
+  background-color: var(--color-base2);
+  color: var(--color-body);
+  font-family: var(--font-base),  sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  color:var(--color-heading);
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+
+}
+
+a.hover{
+  color: var(--color-brand);
+}
+
+img{
+  width: 100%;
+}
+
+.navbar{
+  background-color: var(--color-base);
+  font-size: 1.2rem;
+}
+
+.navbar .nav-link.active{
+  color: var(--color-brand);
+}
+
+.full-height{
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 80px;
+  border-bottom: 2px solid;
+}
+
+
+.navbar .nav-link{
+  font-weight: 700;
+  text-transform: uppercase;
+  color:white;
+}
+
+.navbar .nav-link:hover{
+  color: var(--color-brand);
+}
+
+.txtBox{
+  display:flex;
+  justify-content:start;
+
+}
+.btnRight{
+  display: flex;
+  justify-content: end;
+  max-height: 50px;
+  margin-top: 10%;
+
+}
+
+.shadow-effect{
+  transition: all 0.5s;
+}
+.shadow-effect:hover{
+  box-shadow: 0 0 0 5px var(--color-brand) ;
+}
+
+h2{
+  position: relative;
+font-family: 'Source Code Pro', monospace !important;
+width: max-content;
+font-size: 3rem;
+}
+
+h2::before,
+h2::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+h2::before {
+  background: var(--color-base2) !important;
+  animation: typewritter 3s steps(12) forwards;
+}
+
+h2::after{
+  width: 0.1em;
+  background: white;
+    animation: typewritter 3s steps(12) forwards, blink 6s steps(12) forwards;
+}
+
+@keyframes typewritter {
+  to{
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to{
+    background: transparent;
+  }
+}
+
+@media (min-width : 992px) {
+
+    h2{
+      font-size: 6rem !important;
+    }
+  .navbar{
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background: linear-gradient(#2C3333,#2C3333);
+
+  }
+
+  .navbar-brand img{
+    border: 8px;
+  }
+
+  #content-wrapper{
+    padding-left: var(--sidbar-width);
+  }
+
+  .top{
+    color: var(--color-brand2);
+  }
+
+
+}
+
+@media (max-width:490px){
+
+.mob{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.imgsm{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+}
+
+
+
+
+
+
+.btn{
+  padding: 12px 28px;
+  font-weight: 700;
+}
+
+
+
+.btn-brand{
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+
+.bg-base{
+  background-color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+  background-color: var(--color-brand2);
+  color: var(--color-base);
+  border-color: var(--color-brand2);
+
+}
+
+.link-custom{
+  font-weight: 700;
+  position: relative;
+
+
+}
+
+.link-custom:hover{
+
+  color:var(--color-buttonHover);
+
+}
