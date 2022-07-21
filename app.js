@@ -8,11 +8,20 @@ app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended:true}));
 
+app.use(loger);
+
 app.get("/" , function(req,res){
   res.sendFile(__dirname+"/index.html");
   app.use(express.static(__dirname+"/"));
 
 });
+
+function loger(req,res,next){
+  console.log("HIO");
+  next();
+}
+
+
 
 app.post("/", function(req,res){
   const name= req.body.name;
