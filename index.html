@@ -69,7 +69,7 @@
           <a href="mailto:gurkeeratsingh99@gmail.com" class="btn btn-brand me-3"><i class="fa-solid fa-envelope"></i> Email</a>
           </div>
           <div class="col-md-auto col-sm-auto p-2">
-          <a href="#" class="link-custom"><i class="fa-solid fa-phone"></i> 778-242-2163</a>
+          <a href="tel:778-242-2163" class="link-custom"><i class="fa-solid fa-phone"></i> 778-242-2163</a>
           </div>
         </div>
 
@@ -97,7 +97,7 @@
           </div>
 
           <div class="col-md-3 col-12 mob p-1">
-            <div class="projects h-100 p-4 bg-base rounded-4 shadow-effect" data-aos="flip-up">
+            <div class="projects h-100 p-4 bg-base rounded-4 shadow-effect" data-aos="flip-left">
               <h4 class="mt-2 mb-4 top">Weather</h4>
               <p>Enter your City name and you will get the weather of that City. Made using HTML, CSS, NodeJs , Express and using OpenWeatherMap API</p>
 
@@ -137,7 +137,7 @@
               </div>
             </div>
             <div class="row gy-4">
-              <div class="col-lg-3 mw-100">
+              <div class="col-lg-3 mw-100 " data-aos="zoom-in">
                 <div class="card rounded-4 bg-base shadow-effect h-100 ">
                   <div class="top col-lg-12 m-2 ms-3">
                     My Education:
@@ -149,7 +149,7 @@
 
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3" data-aos="zoom-in">
                 <div class="card rounded-4 bg-base shadow-effect h-100 ">
                   <div class="top col-lg-12 m-2 ms-3">
                     Technologies so far I have used:
@@ -164,7 +164,7 @@
 
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3" data-aos="zoom-in">
                 <div class="card rounded-4 bg-base shadow-effect h-100 ">
                   <div class="top col-lg-12 m-2 ms-3">
                     My Interests:
@@ -177,7 +177,7 @@
 
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3" data-aos="zoom-in">
                 <div class="card rounded-4 bg-base shadow-effect h-100 ">
                   <div class="top col-lg-12 m-2 ms-3">
                     Future:
@@ -246,7 +246,7 @@
               <span class="techWord p-2" data-aos="fade-right"  data-aos-delay="300">Bootstrap 5</span>
             </div>
             <div class="col-lg-4 col-sm-4 d-flex justify-content-center">
-              <span class="techWord p-2"  data-aos="fade-right" data-aos-delay="300">Smtpjs</span>
+              <span class="techWord p-2"  data-aos="fade-right" data-aos-delay="300">Nodemailer</span>
             </div>
 
 
@@ -263,7 +263,7 @@
            </div>
 
            <div class="col">
-             <form  onsubmit="sendEmail(); reset(); return false;">
+             <form  method="post" action="/send">
                <div class="row justify-content-md-center">
                  <div class="form-group col-lg-7 col-12  p-3 d-flex justify-content-center">
                    <input type="text" class="form-control" name="name" value="" placeholder="Enter your Name">
@@ -272,7 +272,7 @@
                    <input type="email" class="form-control" name="email" value="" placeholder="Enter your email address">
                  </div>
                  <div class="form-group col-lg-7 col-12  d-flex justify-content-center  p-3">
-                     <textarea name="reply" rows="5" cols="60" placeholder="Questions || Suggestions || Ideas"></textarea>
+                     <textarea name="reply" rows="5" cols="90" placeholder="Questions || Suggestions || Ideas"></textarea>
                    </div>
                  <div class="form-group btnRight col-md-12 d-flex justify-content-center">
                    <button type="submit" class="btn btn-brand btn-glow" name="button">Send</button>
