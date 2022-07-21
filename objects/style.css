@@ -47,7 +47,7 @@ img{
 }
 
 .navbar .nav-link.active{
-  color: var(--color-brand);
+  font-size: 1.2rem;
 }
 
 .full-height{
@@ -60,6 +60,16 @@ img{
   border-bottom: 2px solid;
 }
 
+.techWord{
+font-size: 1.2rem;
+animation-timing-function: ease-in;
+}
+
+.techWord:hover{
+  color: var(--color-buttonHover);
+  background-color: var(--color-base);
+
+}
 
 .navbar .nav-link{
   font-weight: 700;
@@ -168,6 +178,9 @@ h2::after{
 .imgsm{
   margin-top: 10px;
   margin-bottom: 10px;
+}
+section{
+  min-width: 100%;
 }
 
 }

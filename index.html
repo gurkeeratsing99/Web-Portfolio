@@ -30,10 +30,13 @@
                       <a class="nav-link active" aria-current="page" href="#projects">projects</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#about">About</a>
+                      <a class="nav-link active" aria-current="page" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#techUsed">About</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#contact">Contact me</a>
@@ -84,7 +87,7 @@
         </div>
         <div class="row" >
           <div class="col-md-3 col-sm-12 mob p-1 " >
-            <div class="projects p-4 bg-base rounded-4 shadow-effect h-100" data-aos="flip-left">
+            <div class="projects p-4 bg-base rounded-4 shadow-effect h-100 " data-aos="flip-left">
               <h4 class="mt-2 mb-4 top">Calculator</h4>
               <p>Made in HTML, CSS, JavaScript (jQuery). Static hosting on AWS</p>
               <a href="https://garrywebserver.s3.ca-central-1.amazonaws.com/Calculator+Finnal+-AWS/Claculator-master/index.html" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a>
@@ -210,34 +213,77 @@
       </div>
     </section>
 
-    <section id="contact" class="full-height px-lg-5">
+    <section id="techUsed" class="full-height px-lg-5">
       <div class="container">
-        <div class="row justify-content-center text-center pb-4" data-aos="fade-up" >
-          <div class="col-lg-8 pb-4">
-            <h1>Contact Me</h1>
+        <div class="row">
+          <div class="col-lg-8" col-sm-12>
+            <h1>Technologies Used in this Website</h1>
           </div>
+        </div>
+        <div class="row mt-5">
 
-          <div class="col-lg-8">
-            <form class="row g-lg-3 gy-3" method="post">
-              <div class="form-group col-md-6">
-                <input type="text" class="form-control" name="name" value="" placeholder="Enter your Name">
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" value="" placeholder="Enter your email address">
-              </div>
-                <div class="form-group col-lg-9 txtBox">
-                  <textarea name="reply" rows="5" cols="40" placeholder="Questions || Suggestions || Ideas"></textarea>
-                </div>
-                <div class="form-group col-lg-3 btnRight">
-                  <button type="submit" class="btn btn-brand me-3" name="button">Send</button>
-                </div>
-
-            </form>
-          </div>
+            <div class="col-lg-3 col-sm-3 d-flex justify-content-center">
+              <span class="techWord p-2"  data-aos="fade-right" data-aos-delay="300">HTML</span>
+            </div>
+            <div class="col-lg-3 col-sm-3 d-flex justify-content-center">
+              <span class="techWord p-2" data-aos="fade-right"  data-aos-delay="300">CSS</span>
+            </div>
+            <div class="col-lg-3 col-sm-3 d-flex justify-content-center">
+              <span class="techWord p-2"  data-aos="fade-right" data-aos-delay="300">JavaScript</span>
+            </div>
+            <div class="col-lg-3 col-sm-3 d-flex justify-content-center">
+              <span class="techWord p-2"  data-aos="fade-right" data-aos-delay="300">NodeJs</span>
+            </div>
 
         </div>
+        <div class="row mt-5">
+
+            <div class="col-lg-4 col-sm-4  d-flex justify-content-center">
+              <span class="techWord p-2"  data-aos="fade-right" data-aos-delay="300">AOS</span>
+            </div>
+            <div class="col-lg-4 col-sm-4 d-flex justify-content-center">
+              <span class="techWord p-2" data-aos="fade-right"  data-aos-delay="300">Bootstrap 5</span>
+            </div>
+            <div class="col-lg-4 col-sm-4 d-flex justify-content-center">
+              <span class="techWord p-2"  data-aos="fade-right" data-aos-delay="300">Smtpjs</span>
+            </div>
+
+
+        </div>
+
       </div>
     </section>
+
+    <section id="contact" class="full-height px-lg-5">
+       <div class="container">
+         <div class="row justify-content-center text-center pb-4" data-aos="fade-up" >
+           <div class="col-lg-8 pb-4 col-sm-12">
+             <h1>Contact Me</h1>
+           </div>
+
+           <div class="col d-flex justify-content-center">
+             <form  method="post">
+               <div class="form-row">
+                 <div class="form-group col-lg-12 col-sm-12 col-md-12  p-3">
+                   <input type="text" class="form-control" name="name" value="" placeholder="Enter your Name">
+                 </div>
+                 <div class="form-group col-lg-12 col-sm-12 col-md-12 p-3">
+                   <input type="email" class="form-control" name="email" value="" placeholder="Enter your email address">
+                 </div>
+                 <div class="form-group col-lg-12 col-sm-12 col-md-12 p-3">
+                     <textarea name="reply" rows="5" cols="40" placeholder="Questions || Suggestions || Ideas"></textarea>
+                   </div>
+                 <div class="form-group btnRight col-md-12 d-flex justify-content-center">
+                   <button type="submit" class="btn btn-brand btn-glow" name="button">Send</button>
+                 </div>
+               </div>
+
+             </form>
+           </div>
+
+         </div>
+       </div>
+     </section>
 
 
 
