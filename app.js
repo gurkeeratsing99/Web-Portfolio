@@ -18,34 +18,39 @@ app.post("/send", function(req,res){
   const name= req.body.name;
   const email = req.body.email;
   const reply =  req.body.reply;
+  if(res.statusCode!==200){
+      res.sendFile(__dirname+"/index.html");
+      console.log(res.statusCode);
+  }
+  else{  const transporter = nodemailer.createTransport({
 
-  const transporter = nodemailer.createTransport({
-
-      service : "hotmail",
-      auth: {
-        user: "gs2422163@gmail.com",
-        pass: "Brarsingh=99"
-      }
+        service : "hotmail",
+        auth: {
+          user: "gs2422163@gmail.com",
+          pass: "Brarsingh=99"
+        }
 
 
-    });
+      });
 
-    const options={
-      from : "gs2422163@gmail.com",
-      to :"gurkeeratsingh99@gmail.com",
-      subject:"You got question from "+name+ ", Email address: "+email,
-      text:reply
-    };
+      const options={
+        from : "gs2422163@gmail.com",
+        to :"gurkeeratsingh99@gmail.com",
+        subject:"You got question from "+name+ ", Email address: "+email,
+        text:reply
+      };
 
-    transporter.sendMail(options , function(err, info){
-      if(err){
-        console.log(err);
-        return;
-      }
-      console.log("Sent : " + info.response);
-    });
+      transporter.sendMail(options , function(err, info){
+        if(err){
+          console.log(err);
+          return;
+        }
+        console.log("Sent : " + info.response);
+        console.log(res.statusCode);
+      });
 
-res.sendFile(__dirname+"/index.html");
+  res.sendFile(__dirname+"/index.html");}
+
 
 });
 
