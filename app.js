@@ -63,8 +63,8 @@ res.sendFile(__dirname+"/index.html");
   //   port: 587,
   //   secure: false, // true for 465, false for other ports
   //   auth: {
-  //     user: "gs2422163@gmail.com", // generated ethereal user
-  //     pass: "Brarsingh=99", // generated ethereal password
+  //     user: "", // generated ethereal user
+  //     pass: "", // generated ethereal password
   //   },
   //   tls:{
   //     rejectUnauothorized:false
@@ -74,7 +74,7 @@ res.sendFile(__dirname+"/index.html");
   // // send mail with defined transport object
   // let info = await transporter.sendMail({
   //   from: '"name" <gurkeeratsingh99@gmail>', // sender address
-  //   to: "gs2422163@gmail.com", // list of receivers
+  //   to: "", // list of receivers
   //   subject: "Hello ✔", // Subject line
   //   text: "Hello", // plain text body
   //   html: reply, // html body
