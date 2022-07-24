@@ -26,16 +26,16 @@ app.post("/send", function(req,res){
 
       service : "hotmail",
       auth: {
-        user: "gs2422163@gmail.com",
-        pass: "Brarsingh=99"
+        user: "",
+        pass: ""
       }
 
 
     });
 
     const options={
-      from : "gs2422163@gmail.com",
-      to :"gurkeeratsingh99@gmail.com",
+      from : "",
+      to :"",
       subject:"You got question from "+name+ ", Email address: "+email,
       text:reply
     };
