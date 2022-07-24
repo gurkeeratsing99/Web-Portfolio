@@ -3,7 +3,8 @@ const https = require("https");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
-
+require('dotenv').config();
+console.log(process.env)
 
 app.use(bodyParser.urlencoded({extended:true}));
 
@@ -26,17 +27,17 @@ app.post("/send", function(req,res){
 
         service : "hotmail",
         auth: {
-          user: "gs2422163@gmail.com",
-          pass: "Brarsingh=99"
+          user: process.env.USN,
+          pass: process.env.PASSWORD
         }
 
 
       });
 
       const options={
-        from : "gs2422163@gmail.com",
-        to :"gurkeeratsingh99@gmail.com",
-        subject:"You got question from "+name+ ", Email address: "+email,
+        from : process.env.USN,
+        to :process.env.SENDUSERNAME,
+        subject:"You got message from "+name+ ", Email address: "+email,
         text:reply
       };
 
@@ -52,6 +53,11 @@ app.post("/send", function(req,res){
   res.sendFile(__dirname+"/index.html");}
 
 
+});
+
+app.get("/send" , function(req, res){
+  res.sendFile(__dirname+"/index.html");
+  console.log("Thanks")
 });
 
 app.listen(process.env.PORT || 3000, function(){
