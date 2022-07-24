@@ -27,8 +27,8 @@ app.post("/", function(req,res){
   const name= req.body.name;
   const email = req.body.email;
   const reply =  req.body.reply;
-  const key = "17cef1a4f099548aeda90cdb450ef898-us10";
-  const id = "469e229a40";
+  const key = "";
+  const id = "";
   const url =  "https://us10.api.mailchimp.com/3.0/lists/"+id;
   const details = {
     members:[
