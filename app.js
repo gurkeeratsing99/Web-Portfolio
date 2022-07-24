@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
 require('dotenv').config();
-console.log(process.env)
+
 
 app.use(bodyParser.urlencoded({extended:true}));
 
