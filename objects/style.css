@@ -9,6 +9,7 @@
     --color-base2: #171717;
     --color-brand: #C06014;
     --color-brand2: #F2A154;
+    --color-brand3:#FFA500;
     --sidbar-width: 240px;
     --font-base: "Roboto Mono";
     --color-buttonHover:#EF5B0C;
@@ -130,20 +131,10 @@ h2::after{
     animation: typewritter 3s steps(12) forwards, blink 6s steps(12) forwards;
 }
 
-@keyframes typewritter {
-  to{
-    left: 100%;
-  }
+
+.flick{
+  animation: flicker 1s ease-in-out infinite alternate;
 }
-
-@keyframes blink {
-  to{
-    background: transparent;
-  }
-}
-
-
-
 
 .btn{
   padding: 12px 28px;
@@ -182,6 +173,33 @@ h2::after{
 
 }
 
+.top{
+  color: var(--color-brand2);
+}
+
+
+@keyframes typewritter {
+  to{
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to{
+    background: transparent;
+  }
+}
+
+
+@keyframes flicker {
+
+  to {
+    text-shadow:
+    0 0 5px var(--color-brand3), 0 0 10px var(--color-base2),
+    0 0 10px var(--color-brand3), 0 0 20px var(--color-base2);
+  }
+}
+
 
 @media screen and (max-width: 700px) and (min-width: 200px)  {
 
@@ -197,27 +215,29 @@ h2::after{
 
 }
 
-@media (min-width : 992px) {
+@media (min-width : 769px) {
 
     h2{
       font-size: 6rem !important;
     }
   .navbar{
     min-height: 100vh;
-    width: var(--sidbar-width);
     background: linear-gradient(#2C3333,#2C3333);
 
   }
-
+  .w-auto{
+  max-width: 15%;
+  }
   .navbar-brand img{
     border: 8px;
   }
 
+  .techWord{
+    font-size: 1.5rem!important;
+  }
   #content-wrapper{
     padding-left: var(--sidbar-width);
   }
 
-  .top{
-    color: var(--color-brand2);
-  }
+
 }
