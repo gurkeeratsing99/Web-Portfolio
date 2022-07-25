@@ -50,7 +50,8 @@ app.post("/send", function(req,res){
         console.log(res.statusCode);
       });
 
-  res.sendFile(__dirname+"/index.html");}
+  res.redirect("/index.html");
+}
 
 
 });
