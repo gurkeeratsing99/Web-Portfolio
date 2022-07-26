@@ -89,12 +89,16 @@
           <div class="col-lg-3 mw-100" >
             <div class="projects p-2 card rounded-4 bg-base shadow-effect h-100 " data-aos="flip-left">
               <div class="top col-lg-12 m-2 ms-3">
-                  <h4 class="top">Calculator</h4>
+                  <h4 class="top">Calculator <i class="fa-solid fa-calculator"></i></h4>
+
               </div>
               <div class="bottom col-lg-12 ps-3">
                 <p>Made in HTML, CSS, JavaScript (jQuery).</p>
+                <p>Made JS functions to solve the operations</p>
+                <p>Difficult part was to show the last computation performed as history and using the keyboard inputs to manipulate the DOM</p>
                 <p>Static hosting on AWS</p>
-                <p><a href="https://garrywebserver.s3.ca-central-1.amazonaws.com/Calculator+Finnal+-AWS/Claculator-master/index.html" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a></p>
+                <p>Compatiable on Desktop/Tablet </p>
+                <p><a href="https://garrywebserver.s3.ca-central-1.amazonaws.com/Calculator+Finnal+-AWS/Claculator-master/index.html" class="link-custom flick">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a></p>
               </div>
 
             </div>
@@ -102,26 +106,34 @@
             <div class="col-lg-3 mw-100" >
             <div class="projects p-2 card rounded-4 bg-base shadow-effect h-100 " data-aos="flip-left">
               <div class="top col-lg-12 m-2 ms-3">
-                  <h4 class="top">Weather</h4>
+                  <h4 class="top">Weather <i class="fa-solid fa-cloud-moon-rain"></i></h4>
               </div>
               <div class="bottom col-lg-12 ps-3">
-                <p>Enter your City name and you will get the weather of that City.</p>
-                <p>Made using HTML, CSS, NodeJs, Express and using OpenWeatherMap API</p>
-                <p><a href="https://gs-weather.herokuapp.com/" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a></p>
+                <p>Enter your City name and you will get the weather conditions along with Current temprature and the feels like temprature of that City.</p>
+                <p>Using OpenWeatherMap API to fetch the data.</p>
+                <p>Rendering the data from application to the HTML page in a organized manner</p>
+                <p>The most challenging part learnt was to store the API keys and get it working on heroku server.</p>
+                <p>Made using HTML, CSS, NodeJs, Express and OpenWeatherMap API</p>
+                <p>Compatiable on Desktop/Tablet/Mobile </p>
+                <p><a href="https://gs-weather.herokuapp.com/" class="link-custom flick">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a></p>
 
               </div>
 
             </div>
               </div>
             <div class="col-lg-3 mw-100" >
-            <div class="projects p-2 card rounded-4 bg-base shadow-effect h-100 " data-aos="flip-left">
-              <div class="top col-lg-12 m-2 ms-3">
-                  <h4 class="top">Daily Journal</h4>
+            <div class="projects p-2 card rounded-4 bg-base shadow-effect h-100 d-flex justify-content-center" data-aos="flip-left">
+              <div class="col-lg-12 m-2 ms-3 ">
+                  <h4 class="top ">Do to List <i class="fa-solid fa-list-check"></i></h4>
               </div>
               <div class="bottom col-lg-12 ps-3">
-                <p>I can write my Journal.</p>
-                <p> Made using HTML, CSS, JavaScript, NodeJs, Express and MonogoDB</p>
-                <p><a href="#" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a></p>
+                <p>User needs to log in and with admin account and after sucessfull authenication will be redirected to the application.</p>
+                <p>User can add all the task that I need to to do and once the task is done I can mark as completed.</p>
+                <p>All the tasks and credentials are being stored in MonogDB databse connected to this app.</p>
+                <p>Working on making the application compatiable for multiple users so that anyone can register and then sign in using their credentials and will be redirected to their own dashboard</p>
+                <p> Made using HTML, CSS, JavaScript, NodeJs, EJS,Express and MonogoDB</p>
+                <p>Compatiable on Desktop/Tablet/Mobile </p>
+                <p><a href="https://gs-reminderapp.herokuapp.com/" class="link-custom flick ">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a></p>
               </div>
 
             </div>
@@ -129,12 +141,16 @@
             <div class="col-lg-3 mw-100" >
             <div class="projects p-2 card rounded-4 bg-base shadow-effect h-100 " data-aos="flip-left">
               <div class="top col-lg-12 m-2 ms-3">
-              <h4 class="top">NewsLetter</h4>
+              <h4 class="top">NewsLetter <i class="fa-solid fa-rss"></i></h4>
               </div>
               <div class="bottom col-lg-12 ps-3">
                 <p>Users can sign up to my NewsLetter and recive weekly emails from me.</p>
-                <p>Build using HTML, CSS, NodeJs, EJS, Express and mailchimp API. All the user details are recored in database of Mailchimp. Being a dynamic webpage,hosting it at Heroku Server</p>
-                <p><a href="https://gs-mynewsletter.herokuapp.com/" class="link-custom">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a></p>
+                <p>Getting the user data and sending to Mailchimp database using the API.</p>
+                <p>After sucessfull sign up, rendering success page which is using the same templating as the failure page which is rendered if there is an error.</p>
+                <p>Error is being checkted from https module which returns 201 as success and rest 404 as bad request.</p>
+                <p>Build using HTML, CSS, NodeJs, EJS, Express and mailchimp API.Being a dynamic webpage,hosting it at Heroku Server</p>
+                <p>Compatiable on Desktop/Tablet/Mobile </p>
+                <p><a href="https://gs-mynewsletter.herokuapp.com/" class="link-custom flick">Check it Out <i class="fa-solid fa-right-to-bracket"></i></a></p>
               </div>
 
             </div>
@@ -155,7 +171,7 @@
             </div>
             <div class="row gy-4">
               <div class="col-lg-3 mw-100 " data-aos="zoom-in">
-                <div class="card p-1 d-flex align-items-center rounded-4 bg-base shadow-effect h-100 ">
+                <div class="card rounded-4 bg-base shadow-effect h-100  ">
                   <div class="top col-lg-12 m-2 ms-3">
                     My Education:
                   </div>
@@ -168,7 +184,7 @@
                 </div>
               </div>
               <div class="col-lg-3" data-aos="zoom-in">
-                <div class="card rounded-4 bg-base shadow-effect h-100  d-flex align-items-center p-1">
+                <div class="card rounded-4 bg-base shadow-effect h-100 ">
                   <div class="top col-lg-12 m-2 ms-3">
                     Technologies I have used so far:
                   </div>
