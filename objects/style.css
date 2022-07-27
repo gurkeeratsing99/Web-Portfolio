@@ -64,6 +64,7 @@ img{
 .techWord{
 font-size: 1.2rem;
 animation-timing-function: ease-in;
+
 }
 
 .techWord:hover{
@@ -78,7 +79,7 @@ animation-timing-function: ease-in;
   color:white;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-link.active{
   color: var(--color-brand);
 }
 
@@ -134,6 +135,7 @@ h2::after{
 
 .flick{
   animation: flicker 1s ease-in-out infinite alternate;
+
 }
 
 .btn{
@@ -176,7 +178,6 @@ h2::after{
 .top{
   color: var(--color-brand2);
 }
-
 
 @keyframes typewritter {
   to{
