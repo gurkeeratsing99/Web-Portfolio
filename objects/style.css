@@ -101,6 +101,7 @@ animation-timing-function: ease-in;
 }
 .shadow-effect:hover{
   box-shadow: 0 0 0 5px var(--color-brand) ;
+  background-color: #272121;
 }
 
 h2{
@@ -165,9 +166,9 @@ h2::after{
 .link-custom{
   font-weight: 700;
   position: relative;
-
-
+  color:var(--color-heading);
 }
+
 
 .link-custom:hover{
 
@@ -196,8 +197,8 @@ h2::after{
 
   to {
     text-shadow:
-    0 0 5px var(--color-brand3), 0 0 10px var(--color-base2),
-    0 0 10px var(--color-brand3), 0 0 20px var(--color-base2);
+    0 0 5px var(--color-brand3), 0 0 20px var(--color-brand3),
+    0 0 10px var(--color-brand3), 0 0 20px var(--color-brand3);
   }
 }
 
