@@ -1,7 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@600&family=Roboto:wght@300&display=swap');
 
-
 :root {
     --color-body: #EDEDED;
     --color-heading: #eef3db;
@@ -94,6 +93,9 @@ animation-timing-function: ease-in;
   max-height: 50px;
   margin-top: 10%;
 
+}
+.slide{
+  color: black!important;
 }
 
 .shadow-effect{
@@ -202,7 +204,7 @@ h2::after{
   }
 }
 
-
+/* CSS for mobile and tablet devices */
 @media screen and (max-width: 700px) and (min-width: 200px)  {
 
 .mob{
@@ -217,6 +219,8 @@ h2::after{
 
 }
 
+
+/* CSS for Large devices */
 @media (min-width : 769px) {
 
     h2{
