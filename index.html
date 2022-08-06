@@ -17,7 +17,7 @@
   <nav class="navbar w-auto navbar-expand-lg navbar-light navbar-dark fixed-top">
               <div class="container flex-lg-column">
                 <a class="navbar-brand mb-lg-4 mx-lg-auto" href="#">
-                  <span class="h3 fw-bold d-block d-lg-none" id="headChnage">Garry Singh</span>
+                  <span class="h3 fw-bold d-block d-md-none d-lg-none" id="headChnage">Garry Singh</span>
                   <img src="objects/images/profile.png" class="d-none d-lg-block" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -358,7 +358,7 @@
            </div>
 
            <div class="col">
-             <form  method="post" action="/send">
+             <form enctype="multipart/form-data"  method="post" action="/send">
                <div class="row justify-content-md-center">
                  <div class="form-group col-lg-7 col-12  p-3 d-flex justify-content-center">
                    <input type="text" class="form-control" name="name" value="" placeholder="Enter your Name">
@@ -368,6 +368,9 @@
                  </div>
                  <div class="form-group col-lg-7 col-12  d-flex justify-content-center  p-3">
                      <textarea name="reply" rows="5" cols="90" placeholder="Questions || Suggestions || Ideas"></textarea>
+                   </div>
+                   <div class="form-group col-lg-7 col-12 mw-20  d-flex justify-content-center  p-3">
+                     <input class="form-control" type="file" name="fileAttachment" id="formFile">
                    </div>
                  <div class="form-group btnRight col-md-12 d-flex justify-content-center">
                    <button type="submit" class="btn btn-brand btn-glow" name="button">Send</button>

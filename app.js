@@ -1,9 +1,23 @@
+require('dotenv').config();
+
 const express =require("express");
 const https = require("https");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const multer  = require('multer');
+
 const app = express();
-require('dotenv').config();
+
+const fileStorageEngine =  multer.diskStorage({ //creating middleware for multer
+    destination: (req, file,cb)=>{ //Storing the file in Server side folder Named uploads
+      cb(null, "./uploads")
+    },
+    filename:(req,file,cb)=>{
+      cb(null, file.originalname)
+    }
+});
+
+const upload = multer({ storage: fileStorageEngine });
 
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -14,14 +28,17 @@ app.get("/" , function(req,res){
 
 });
 
-app.post("/send", function(req,res){
+app.post("/send",upload.single('fileAttachment'), function(req,res){ //Using upload middleware
 
   const name= req.body.name;
   const email = req.body.email;
   const reply =  req.body.reply;
+  const fileP = req.file.path;
+  const fileN = req.file.originalname;
+  //console.log("File attachment name : "+req.file.originalname);
   if(res.statusCode!==200){
       res.sendFile(__dirname+"/index.html");
-      console.log(res.statusCode);
+      //console.log(res.statusCode);
   }
   else{  const transporter = nodemailer.createTransport({
 
@@ -38,7 +55,13 @@ app.post("/send", function(req,res){
         from : process.env.USN,
         to :process.env.SENDUSERNAME,
         subject:"You got message from "+name+ ", Email address: "+email,
-        text:reply
+        text:reply,
+        attachments:[{
+          filename: fileN,
+          path:__dirname+"/"+fileP
+        }
+
+        ]
       };
 
       transporter.sendMail(options , function(err, info){
@@ -46,8 +69,8 @@ app.post("/send", function(req,res){
           console.log(err);
           return;
         }
-        console.log("Sent : " + info.response);
-        console.log(res.statusCode);
+        //console.log("Sent : " + info.response);
+        //console.log(res.statusCode);
       });
 
   res.redirect("/index.html");
@@ -58,7 +81,7 @@ app.post("/send", function(req,res){
 
 app.get("/send" , function(req, res){
   res.sendFile(__dirname+"/index.html");
-  console.log("Thanks")
+  //console.log("Thanks")
 });
 
 app.listen(process.env.PORT || 3000, function(){
